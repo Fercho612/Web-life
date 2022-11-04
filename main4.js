@@ -10,12 +10,10 @@ function tabFrom(){
 
 $(document).ready(function(){
   
-function changeBar(){
-  
-}
+
 function sucessLog(){
   alert("Se inicio sesion correctamente");
-  window.location.href = "../UI/UI.html"; 
+  window.location.href = "UI.html"; 
 }
 
 $('#Log-In').submit(function(event){
