@@ -1,6 +1,6 @@
 <?php
 
-  $connexion = new mysqli("localhost","root","","web-life") or die ("not connected".mysqli_connect_error());  
+  $connexion = new mysqli("containers-us-west-30.railway.app","root","caUqZyt82tpOjkC6zXNo","railway") or die ("not connected".mysqli_connect_error());  
   $error = '';
 
   $last_name = $_POST["lastname_sign"];
