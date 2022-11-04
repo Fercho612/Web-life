@@ -6,21 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebLife</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="styles_ui.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="content-page row p-3 m-0">
-        <aside class="aside col-3">
+        <aside class="aside col-2 p-4 text-light">
+            <div class="perfil w-100 text-center">
+                <img src="../Multimedia/Perfiles/Perfil.png" alt="" class="perfil-img img-responsive w-100 border border-danger rounded-circle mb-3">
+                <span class="fs-4">${Profile}</span>
+            </div>
+            <div class="pedidos mt-3 mb-5">
+                <h4>Pedios</h4>
+                <div class="pedidos_list">
+                    <button class="ped_btn ped_btn-active">
+                        <i class="bi bi-card-list me-3"></i> 
+                        <span>Lista de pedidos</span>
+                    </button> 
+                </div>
+                <div class="pedidos_create">
+                    <button class="ped_btn">
+                        <i class="bi bi-pencil me-3"></i> <span>Crear pedido</span>
+                    </button> 
+                </div>
+            </div>
             <div class="perfil">
-                
+                <h4>Perfil</h4>
+                <div class="perdil_mod">
+                    <button class="ped_btn">
+                        <i class="bi bi-person-circle me-3"></i> <span>Modificar Perfil</span>
+                    </button>
+                </div>
+                <div class="perfil_pedios">
+                    <button class="ped_btn">
+                        <i class="bi bi-person-lines-fill me-3"></i> <span>Mis pedidos</span>
+                    </button>
+                </div>
             </div>
         </aside>
-        <main class="main col-9">
-            <div class="conteiner-fluid row">
-                <section>
-                </section>
-                <section>
+        <main class="main col-10">
+            <div class="conteiner-fluid row text-light h-100">
+                <section class="text-center position-relative h-100">
+                    <h3 class="h1 text m-5">Lista de pedidos</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center list_pedidos">
+                        <div class="pedido d-flex">
+                            <div class="d-flex pedido_perfil h-100 w-25">
+                                <div class="img h-100">
+                                    <img src="../Multimedia/Perfiles/Perfil_gato.png" alt="" class="w-100 h-100">
+                                </div>
+                                <h5 class="text-start m-2">Usuario de prueba</h5>
+                            </div>
+                            <div class="contennt_pedido w-75">
+                                <h4 class="text-start m-2">Prueba de titulo</h4>
+                                <div class="row h-75 d-flex align-items-center">
+                                    <p class="col-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem</p>
+                                    <div class="col-4">
+                                        <span>Tecnologias necesarias</span>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <span class="m-1 badge" style="background: orange;">HTML</span>
+                                            <span class="m-1 badge" style="background: lightblue";>CSS</span>
+                                            <span class="m-1 badge" style="background: yellow; color:black">JS</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 h-100 d-flex flex-column align-items-center">
+                                        <span class="mb-2">template</span>
+                                        <button type="button" class="btn btn-primary w-50 h-100 mb-3 p-0" data-bs-toggle="modal" data-bs-target="#modal_img">
+                                            <img src="../Multimedia/Templates/Template-1.png" alt="" class="w-100 h-100">
+                                        </button>
+                                        <div class="modal fade" id="modal_img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <img src="../Multimedia/Templates/Template-1.png" alt="" class="w-100">
+                                                </div>
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo position-absolute top-0 end-0">
+                        <img src="../Multimedia/Logo/Logo_pag.svg" alt="">
+                    </div>
                 </section>
             </div>
         </main>

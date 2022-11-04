@@ -71,9 +71,14 @@ body {
 .tittle-abs{
 	position: relative;
 	left: -80px;
+	text-shadow: 1px 1px 1px #FE0039;
+}
+h3{
 	font-size: 6em;
 	color: #FE0039;
-	text-shadow: 1px 1px 1px #FE0039;
+}
+.text-abs{
+	position: absolute;
 }
 
 /* !Footer */
@@ -99,6 +104,25 @@ body {
 	border-radius: 1em;
 	margin: 20px 5px;
 }
+
+
+@media screen and (max-width: 992px){
+	.bg-img{
+		background: url(Multimedia/Home/Ilustracion-1.jpg) center ;
+		background-size: cover;
+		border-radius: 1em;
+	}
+	.tittle-abs{
+		left: 0;
+	}
+	.sec_title{
+		font-size: 3em;
+	}
+	.main_sec{
+		margin-top: 2vh;
+	}
+}
+
 
 /* !Button */
 .learn-more {

@@ -40,25 +40,6 @@
       echo mysqli_error($connexion);
     }
   }
-  // if(empty($_POST["firstname_sign"])){
-  //   $error = "error";
-  // } else {
-  //   $lastname = $_POST["lastname_sign"];
-  //   $firstname = $_POST["firstname_sign"];
-  //   $mail = $_POST["mail_sign"];
-  //   $user = $_POST["user_sign"];
-  //   $password = $_POST["password_sign"];
-
-  //   $sql = "INSERT INTO `usuarios` (`Usuarios_id`, `first_name`, `last_name`, `username`, `mail`, `password`) VALUES (NULL, '$firstname', '$lastname', '$user', '$mail', '$password');";
-
-  //   $query = mysqli_query($connexion,$sql);
-  //   if($query){
-  //     echo "1 row inserted";
-  //   } else {
-  //     echo mysqli_error($connexion);
-  //   }
-  // }
-
 
   if($error != ''){
     echo $error;

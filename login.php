@@ -1,7 +1,7 @@
 <?php
 $output = '';
 
-$connexion = new mysqli("containers-us-west-30.railway.app","root","caUqZyt82tpOjkC6zXNo","railway") or die ("not connected".mysqli_connect_error());  
+$connexion = new mysqli("containers-us-west-30.railway.app","root","caUqZyt82tpOjkC6zXNo","railway") or die ("not connected".mysqli_connect_error());   
 
 $user = $_POST["user_log"];
 $pass = $_POST["pass_log"];
