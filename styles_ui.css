@@ -1,0 +1,16 @@
+body{
+  background-image: linear-gradient( 99deg,  #680017 10.6%, #40000E 118% );
+}
+.content-page{
+  width: 100vw;
+  height: 100vh;
+}
+
+.aside{
+  background: rgba(0,0,0,.5);
+  border-radius: 1em 0 0 1em;
+}
+.main{
+  background: rgba(0,0,0,.2);
+  border-radius: 0 1em 1em 0;
+}
